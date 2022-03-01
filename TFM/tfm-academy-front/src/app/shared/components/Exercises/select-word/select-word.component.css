@@ -1,0 +1,21 @@
+#Options {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.space.hovering,
+.space.filled {
+  font-weight: bold;
+}
+
+#OptionsGroup {
+  margin-right: 45px;
+  padding-left: 20px;
+}
+
+#OptionsGroup > li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}

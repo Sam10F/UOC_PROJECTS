@@ -1,0 +1,230 @@
+/*
+* Block of CURRICULUM
+*
+* This is the main container for the
+* curriculum. It will delimit its total
+* size as well as the main colors.
+*
+*/
+
+.curriculum {
+  max-width: $curriculum-max-width;
+  padding: 40px 50px;
+  margin: $navegation-height auto 120px;
+  color: $text-color;
+  background-color: white;
+
+  /*
+  * Block of CONTACT INFORMATION IN CURRICULUM
+  *
+  * This block will contain the address
+  * to relate, will be postion fixed being
+  * always visible. It is nested inside curriculum
+  * to limit this style for future contact information
+  * implementations
+  *
+  */
+  .contact-information {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    width: max-content;
+    padding: 0 32px;
+    background-color: white;
+    border: 4px solid;
+  }
+
+  .contact-list {
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .contact-list__title {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+
+    .contact-information {
+      right: 0;
+      bottom: 5px;
+      left: 0;
+      margin: 0 auto;
+    }
+
+    .contact-list { 
+      text-align: left;
+    }
+
+    .contact-list__title {
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .curriculum {
+    padding: 20px;
+  }
+
+}
+
+
+
+
+
+/*
+* Block of INTRODUCTION
+*
+* This block is made by the CV picture, name
+* and degree.
+*
+*/
+
+.introduction { 
+  display: flex; 
+  align-items: center;
+}
+
+.introduction__image {
+  width: 100px;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title__name {
+  font-size: 18px;
+}
+
+.title__degree {
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+
+  .introduction { flex-direction: column; }
+
+}
+
+
+
+
+
+/*
+* Block of EXPERIENCE
+*
+* This block is made by all the practice experience
+* of the cv. Each subblock will correspond to a specific
+* practice and all of them will follow the same structure
+*
+*/
+
+.experience__title {
+  font-size: 18px;
+  border-bottom: 2px solid $cv-main-color;
+}
+
+.experience__notation { font-style: italic; }
+
+.experience__notation::before { content: "** "; }
+
+.practice {
+  display: grid;
+  grid-template-columns: 110px auto;
+  margin-bottom: 28px;
+}
+
+.practice__duration {
+  font-weight: bold;
+  grid-row: 1 / 10;
+}
+
+.practice__title {
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.practice__place {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.practice__description {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.practice__description--remarkable {
+  text-decoration: underline;
+}
+
+.practice__list { 
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+
+  .practice {
+    grid-template-columns: 100%;
+  }
+
+  .practice__title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .practice__list { 
+    padding-left: 20px;
+  }
+
+}
+
+
+
+
+
+/*
+* Block of MORE INFORMATION
+*
+* This block will contain extra link
+* and information that is diffucult
+* to relate with previous blocks
+*
+*/
+
+.extra-information {
+  display: grid;
+  font-weight: bold;
+}
+
+.extra-information__link,
+.achivements-list,
+.language-information__level {
+  font-weight: normal;
+}
+
+.language-information {
+  list-style: disclosure-closed;
+}
+
+@media (max-width: 600px) {
+
+  .extra-information {
+    padding-left: 20px;
+  }
+
+  .language-information,
+  .achivements-list {
+    padding: 0 20px;
+  }
+
+}

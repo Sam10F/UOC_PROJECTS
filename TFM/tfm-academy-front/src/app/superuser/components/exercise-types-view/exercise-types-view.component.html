@@ -1,0 +1,15 @@
+<div class="p-5 d-flex w-100 justify-content-center">
+  <ul class="list w-25 border-right">
+    <li>
+      <h2 class="mb-4 text-underline">Inglés</h2>
+      <app-exercise-type-list
+        [exerciseTypeList]="exerciseTypeList"
+      ></app-exercise-type-list>
+    </li>
+  </ul>
+  <article class="w-50 entity-detail text-center">
+    <app-exercise-type-detail
+      [refreshExerciseTypes]="getAllExerciseTypes"
+    ></app-exercise-type-detail>
+  </article>
+</div>

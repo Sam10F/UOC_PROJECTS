@@ -1,0 +1,27 @@
+<div class="p-5 d-flex w-100 justify-content-center">
+  <div class="list w-25 border-right">
+    <div class="d-flex justify-content-center align-items-center mb-4">
+      <h2 class="text-center text-underline mr-4">Ejercicios</h2>
+      <a
+        routerLink="/newExercise"
+        title="link to new Exercise"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <img
+          height="25"
+          width="25"
+          src="assets/icons/plus-circle.svg"
+          alt="Icono de una casa"
+        />
+      </a>
+    </div>
+    <app-exercise-list-item
+      [exerciseList]="exerciseList"
+    ></app-exercise-list-item>
+  </div>
+  <article class="w-50 entity-detail text-center">
+    <app-exercise-detail
+      [refreshExercises]="getAllExercises"
+    ></app-exercise-detail>
+  </article>
+</div>

@@ -1,0 +1,9 @@
+<div class="p-5 d-flex w-100 justify-content-center">
+  <div class="list w-25 border-right">
+    <h2 class="text-center mb-4 text-underline">Profesores</h2>
+    <app-user-list-item [(userList)]="teacherList"></app-user-list-item>
+  </div>
+  <article *ngIf="teachersService" class="w-50 entity-detail text-center">
+    <app-teacher-detail [refreshTeachers]="getAllTeachers"></app-teacher-detail>
+  </article>
+</div>

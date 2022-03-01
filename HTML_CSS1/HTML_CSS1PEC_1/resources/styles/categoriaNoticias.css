@@ -1,0 +1,126 @@
+body {
+    background-color: var(--clear-background);
+}
+
+/*NOTICIAS CONTAINER*/
+.article-introduction {
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+}
+
+#noticias-container {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: auto 260px;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding-top: 20px;
+}
+
+#noticias-container .noticia {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-column: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#noticias-container .noticia:hover {
+    text-decoration: none;
+}
+
+#noticias-container .noticia:not(#primera-noticia) {
+    display: flex;
+    height: 250px;
+}
+
+#noticias-container #primera-noticia .img-container {
+    height: 470px;
+    width: 100%;
+}
+
+#noticias-container .noticia:not(#primera-noticia) .img-container {
+    height: 250px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+#noticias-container .noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#noticias-container .noticia .info-container {
+    padding: 15px 25px 35px;
+}
+
+#noticias-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#noticias-container p.categoria {
+    color: white;
+    padding: 5px 30px;
+    width: min-content;
+    background-color: var(--brown-background);
+    font-size: 18px;
+    margin: 0;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+
+#noticias-container p.fecha {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#noticias-container p.resumen {
+    font-size: 18px;
+}
+
+p.fecha::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/resources/images/calendar-icon.svg");
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+@media (max-width: 1199px) {
+    #noticias-container .noticia:not(#primera-noticia) .img-container {
+        min-width: 220px;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 991px) {
+    #noticias-container {
+        grid-template-columns: 100%;
+    }
+
+    #extra-info {
+        grid-row: 3;
+    }
+
+    #noticias-populares img {
+        max-height: 210px;
+    }
+}
+
+@media (max-width: 768px) {
+    #noticias-container .noticia:not(#primera-noticia) {
+        height: 540px;
+        flex-direction: column;
+    }
+
+    #noticias-container .noticia:not(#primera-noticia) .img-container {
+        min-width: 100%;
+    }
+}

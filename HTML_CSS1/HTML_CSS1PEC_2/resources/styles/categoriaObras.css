@@ -1,0 +1,88 @@
+body {
+    /*background-image: url("/resources/images/obras-wallpaper.jpg");*/
+}
+
+/*FILTER*/
+#filtrarObras {
+    margin-top: 110px;
+    padding-bottom: 0;
+}
+
+#filtrarObras form fieldset {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#filtrarObras form label {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#filtrarObras form input {
+    width: 100%;
+}
+
+/*OBRAS CONTAINER*/
+.obra {
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.obra:not(:last-child) {
+    border-bottom: 1px solid;
+}
+
+.obra:hover {
+    text-decoration: none;
+}
+
+.obra > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.obra h3 {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.obra img {
+    margin-right: 25px;
+    max-width: 130px;
+    height: 200px;
+}
+
+.obra p {
+    margin-bottom: 8px;
+}
+
+.obra a {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 599px) {
+    /*OBRAS CONTAINER*/
+    .obra {
+        flex-direction: column;
+    }
+
+    .obra img {
+        max-width: 160px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /*FILTER*/
+    #filtrarObras form fieldset {
+        flex-direction: column;
+    }
+
+    #filtrarObras form label {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div *ngIf="card" class="row animate__animated animate__bounce animate_fadeIn">
+    <div class="col-md-9">
+      <h1>{{card.name}}</h1>
+      <p><strong>cardId:</strong> {{card.cardId}}</p>
+      <p><strong>cardSet:</strong> {{card.cardSet}}</p>
+      <p><strong>collectible:</strong> {{card.collectible}}</p>
+      <p><strong>dbfId:</strong> {{card.dbfId}}</p>
+      <p><strong>health:</strong> {{card.health}}</p>
+      <p><strong>locale:</strong> {{card.locale}}</p>
+      <p><strong>playerClass:</strong> {{card.playerClass}}</p>
+      <p><strong>rarity:</strong> {{card.rarity}}</p>
+      <p><strong>type:</strong> {{card.type}}</p>
+
+      <img src="{{card.img}}" class="rounded">
+    </div>
+
+    <div class="col-md-3">
+      <a routerLink="/" class="btn btn-danger">Back</a>
+    </div>
+
+  </div>
+</div>

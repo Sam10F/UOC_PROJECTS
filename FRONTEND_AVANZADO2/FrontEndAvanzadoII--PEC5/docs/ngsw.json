@@ -1,0 +1,114 @@
+{
+  "configVersion": 1,
+  "timestamp": 1622130615199,
+  "index": "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/favicon.ico",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/index.html",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/main.7b5fa117ef3824adbbec.js",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/manifest.webmanifest",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/polyfills.8c151b8375e767ff858f.js",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/runtime.0e49e2b53282f40c8925.js",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/styles.3ff695c00d717f2d2a11.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/css/animate.css",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-128x128.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-144x144.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-152x152.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-192x192.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-384x384.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-512x512.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-72x72.png",
+        "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cards-api",
+      "patterns": [
+        "https:\\/\\/omgvamp-hearthstone-v1\\.p\\.rapidapi\\.com\\/cards\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "cards-imgs",
+      "patterns": [
+        "https:\\/\\/d15f34w2p8l1cc\\.cloudfront\\.net\\/(?:.+\\/)?.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 300,
+      "maxAge": 259200000,
+      "timeoutMs": 2000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/css/animate.css": "1d5c16e4a56f56ceeff595897da8673875104012",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/index.html": "839e24e5ecbc272082685bc0c9164ed0857c052a",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/main.7b5fa117ef3824adbbec.js": "ce71efa67b82bf6aad77d4dabcc4162e79ebbedf",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/manifest.webmanifest": "c36d4bdae200637031ca8a614b0138006854e6e4",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://Sam10F.github.io/FrontEndAvanzadoII--PEC5/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

@@ -1,0 +1,16 @@
+<ul [formGroup]="exerciseAnswers">
+  <li
+    formArrayName="translations"
+    *ngFor="let word of previewExercise; let i = index; trackBy: trackByIndex"
+  >
+    <mat-form-field [formGroupName]="i">
+      <input matInput name="word" formControlName="word" readonly />
+    </mat-form-field>
+    =
+    <mat-form-field [formGroupName]="i">
+      <input matInput name="translation" formControlName="translation" />
+    </mat-form-field>
+  </li>
+</ul>
+<button (click)="checkExercise()">Check</button>
+<p>Result: {{ result }}</p>

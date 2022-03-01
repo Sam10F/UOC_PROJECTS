@@ -1,0 +1,55 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cards-api",
+      "urls": ["https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/**"],
+      "cacheConfig": {
+        "maxSize": 10,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    },
+    {
+      "name": "cards-imgs",
+      "urls": ["https://d15f34w2p8l1cc.cloudfront.net/**/**"],
+      "cacheConfig": {
+        "maxSize": 300,
+        "maxAge": "3d",
+        "timeout": "2s",
+        "strategy": "performance"
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+body {
+    background-color: var(--clear-background);
+}
+
+#noticia-container {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: auto 220px;
+    column-gap: 30px;
+}
+
+/*NOTICIA*/
+#noticia {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#img-container {
+    width: 100%;
+    height: 480px;
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contenido-noticia {
+    padding: 16px 25px 24px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#contenido-noticia .fecha {
+    margin: 15px 0;
+}
+
+#contenido-noticia h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-img {
+    width: 400px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    max-height: 360px;
+}
+
+#categoria {
+    color: white;
+    padding: 5px 30px;
+    padding-top: 5px;
+    width: min-content;
+    background-color: var(--brown-background);
+    font-size: 18px;
+    margin: 0;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+
+#fecha {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.fecha::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/resources/images/calendar-icon.svg");
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+#contenido {
+    font-size: 18px;
+}
+
+#noticia figure {
+    margin: 20px 0;
+}
+
+#noticia figure iframe {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #noticia-container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}

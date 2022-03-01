@@ -1,0 +1,35 @@
+.section-title {
+  text-align: center;
+}
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $max-width;
+  padding: 30px 2% 0;
+  margin: 0 auto;
+  border-top: 3px solid white
+}
+
+.member {
+  width: 30%;
+  margin-bottom: 30px;
+
+  @media (max-width: 900px) {
+    width: 45%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.card-img-top {
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

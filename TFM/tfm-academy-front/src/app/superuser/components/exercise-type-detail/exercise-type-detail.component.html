@@ -1,0 +1,21 @@
+<div *ngIf="exerciseTypeDetail">
+  <div class="entity-header border-bottom border-4 ml-5 mr-5 pb-3">
+    <div class="circle">
+      <img
+        src="assets/icons/book.svg"
+        width="40"
+        height="40"
+        alt="Class icon"
+      />
+    </div>
+    <h4 class="mb-3">{{ exerciseTypeDetail.title }}</h4>
+    <button (click)="deleteExerciseType()" mat-raised-button color="warn">
+      Eliminar
+    </button>
+  </div>
+  <div class="entity-body mt-3 d-flex flex-column align-items-center">
+    <p class="w-75 text-left">
+      {{ exerciseTypeDetail.description }}
+    </p>
+  </div>
+</div>

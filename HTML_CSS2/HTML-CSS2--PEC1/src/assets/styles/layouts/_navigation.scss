@@ -1,0 +1,80 @@
+/*
+* Block of NAVIGATION
+*
+* Everything reletad with the
+* header navigation menu will be here.
+*
+*/
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $navigation-max-width;
+  height: 100%;
+  padding: 5px 15px;
+  margin: 0 auto;
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+
+    .avatar-container__avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    .avatar-container__title {
+      margin-left: 10px;
+      font-size: 22px;
+    }
+
+  }
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+}
+
+.links-container__link {
+  margin-left: 10px;
+}
+
+.dropdown-toggle {
+  padding-left: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-menu {
+  padding: 10px;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) { 
+  .avatar-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .avatar-container__avatar {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .avatar-container__title {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .links-container {
+    font-size: 14px;
+  }
+}

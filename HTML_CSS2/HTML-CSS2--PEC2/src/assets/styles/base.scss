@@ -1,0 +1,85 @@
+/*
+* STRUCTURE TAGS
+*
+* Following you will find the main
+* tags for the structure of the page
+*/
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "New Rocker", cursive;
+  color: $main-text-color;
+  background-color: $uoc-bg;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: $header-height;
+  padding: $main-padding;
+  background-color: $main-color-dark;
+}
+
+main {
+  min-height: $main-height;
+  margin-top: $header-height;
+}
+
+section {
+  padding: 30px 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  min-height: $footer-height;
+  padding: $main-padding;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/*
+* TEXT TAGS
+*
+* All the tags that mainly aim
+* to place text
+*/
+h1,
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+a:hover {
+  color: $main-color-dark;
+}
+
+.fas,
+.far {
+  padding: 5px;
+  vertical-align: sub;
+}

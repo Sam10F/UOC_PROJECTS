@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["name","console","log"],"mappings":";AAAA,IAAMA,EAAO,QACbC,QAAQC,IAAaF,SAAAA,OAAAA","file":"node_test.c486c8c1.js","sourceRoot":"..","sourcesContent":["const name = \"world\";\nconsole.log(`Hello ${name}`);\n"]}

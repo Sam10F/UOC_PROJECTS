@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Cards</h1>
+  <ul class="list-group">
+    <a *ngFor="let card of cards" [routerLink]="['/card', card.cardId]"
+      class="list-group-item list-group-item-action animate__animated animate__bounce animate__dafeIn">
+      {{card.cardId}} - {{card.name}}
+    </a>
+  </ul>
+</div>

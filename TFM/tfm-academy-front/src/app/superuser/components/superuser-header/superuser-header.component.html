@@ -1,0 +1,93 @@
+<div class="h-100 d-flex justify-content-between">
+  <a
+    routerLink="/"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    title="link a dashboard"
+    class="d-flex justify-content-center align-items-center"
+  >
+    <img
+      height="25"
+      width="25"
+      class="dashboard-icon"
+      alt="Icono de una casa"
+    />
+  </a>
+  <ul class="d-flex justify-content-center align-items-center">
+    <li>
+      <a
+        routerLink="/teachers"
+        routerLinkActive="active-link"
+        title="link a Profesores"
+      >
+        Profesores
+      </a>
+    </li>
+     
+    <li>
+      <a
+        routerLink="/students"
+        routerLinkActive="active-link"
+        title="link a Alumnos"
+        class="pl-4"
+      >
+        Alumnos
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/classes"
+        routerLinkActive="active-link"
+        title="link a Clases"
+        class="pl-4"
+      >
+        Clases
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/lessons"
+        routerLinkActive="active-link"
+        title="link a Asignaturas"
+        class="pl-4"
+      >
+        Asignaturas
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/exercises"
+        routerLinkActive="active-link"
+        title="link a Ejercicios"
+        class="pl-4"
+      >
+        Ejercicios
+      </a>
+    </li>
+
+    <li>
+      <a
+        routerLink="/exercise-types"
+        routerLinkActive="active-link"
+        title="link a Tipos de Ejercicios"
+        class="pl-4"
+      >
+        Tipos de Ejercicios
+      </a>
+    </li>
+    <li>
+      <div
+        (click)="logout()"
+        title="link a Tipos de Ejercicios"
+        class="cursor-pointer pl-4"
+      >
+        <img
+          src="assets/icons/logout.svg"
+          height="20"
+          width="20"
+          alt="Icono de logout"
+        />
+      </div>
+    </li>
+  </ul>
+</div>

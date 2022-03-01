@@ -1,0 +1,26 @@
+<div class="px-5 py-3 w-100">
+  <ul class="d-flex mb-4">
+    <li
+      (click)="setExerciseToCreate('selectWord')"
+      [class]="{ 'text-underline': exerciseToCreate === 'selectWord' }"
+      class="cursor-pointer"
+    >
+      Select word
+    </li>
+    <li
+      (click)="setExerciseToCreate('translateWord')"
+      [class]="{ 'text-underline': exerciseToCreate === 'translateWord' }"
+      class="ml-3 cursor-pointer"
+    >
+      Translate word
+    </li>
+  </ul>
+
+  <new-app-select-word
+    *ngIf="exerciseToCreate === 'selectWord'"
+  ></new-app-select-word>
+
+  <new-app-translate-word
+    *ngIf="exerciseToCreate === 'translateWord'"
+  ></new-app-translate-word>
+</div>

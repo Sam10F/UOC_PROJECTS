@@ -1,0 +1,40 @@
+<div class="py-5 px-4 container">
+  <ul class="d-flex justify-content-around">
+    <li>
+      <h4 class="text-underline">Siguientes clases:</h4>
+      <ul *ngIf="lessonList" class="content-list">
+        <li class="mb-2" *ngFor="let lesson of lessonList">
+          {{ lesson.assignature_name }}, {{ lesson.duration_string }}
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h4 class="text-underline">Ejercicios pendientes:</h4>
+      <ul class="pl-2">
+        <li>
+          <span class="text-underline">Matemáticas</span>
+          <ul class="content-list">
+            <li class="mb-2">Calculo diferencial: 23/11/2021</li>
+            <li class="mb-2">Matematica discreta: 23/11/2021</li>
+          </ul>
+        </li>
+        <li>
+          <span class="text-underline">Inglés</span>
+          <ul class="content-list">
+            <li class="mb-2">Vocabulario: 23/11/2021</li>
+            <li class="mb-2">Open / Cloze: 23/11/2021</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="row">
+    <div
+      class="col d-flex flex-row justify-content-center align-content-center"
+    >
+      <button class="btn btn-danger" (click)="logout()" [disabled]="loading">
+        Logout
+      </button>
+    </div>
+  </div>
+</div>

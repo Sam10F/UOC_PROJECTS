@@ -1,0 +1,7 @@
+<app-dashboard-view
+  *ngIf="user.rolId == '1' || user.rolId == '2'"
+></app-dashboard-view>
+
+<app-student-dashboard-view
+  *ngIf="user.rolId == '3'"
+></app-student-dashboard-view>

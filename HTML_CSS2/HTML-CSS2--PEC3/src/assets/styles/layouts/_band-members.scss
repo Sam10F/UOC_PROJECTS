@@ -1,0 +1,23 @@
+.card {
+  @apply text-white bg-white rounded-md relative overflow-hidden h-full;
+
+  .card-img {
+    @apply relative mx-auto h-60;
+  }
+
+  .card-body {
+    @apply relative bg-main p-3 h-full;
+  }
+
+  .card-title {
+    @apply text-2xl;
+  }
+
+  .card-subtitle {
+    @apply text-main-text pb-2;
+  }
+
+  .card-text {
+    @apply border-t-2 border-white pt-2;
+  }
+}

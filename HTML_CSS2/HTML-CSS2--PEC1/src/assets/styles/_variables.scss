@@ -1,0 +1,15 @@
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+
+/*MAIN COLORS*/
+$cv-main-color: desaturate(#e9d981, 20);
+$text-color: #000;
+$bg-color: desaturate(lighten(#ffe657, 5), 20);
+
+/*NAVIGATION MENU*/
+$navegation-height: 60px;
+$navigation-max-width: 860px;
+
+/*CURRICULUM*/
+$curriculum-max-width: $navigation-max-width - 100px;

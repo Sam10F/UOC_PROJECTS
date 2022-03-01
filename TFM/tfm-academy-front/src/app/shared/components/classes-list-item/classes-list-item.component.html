@@ -1,0 +1,34 @@
+<ul class="d-flex flex-column align-items-center class">
+  <li
+    *ngFor="let class of classList"
+    (click)="setClassDetail(class)"
+    class="d-flex mb-4 w-100 cursor-pointer"
+    [class]="{ active: classDetail && classDetail.id == class.id }"
+  >
+    <div
+      class="
+        border
+        rounded-circle
+        d-flex
+        justify-content-center
+        align-items-center
+        p-2
+        mr-2
+      "
+    >
+      <img
+        src="assets/icons/building.svg"
+        width="40"
+        height="40"
+        alt="Class icon"
+      />
+    </div>
+    <div class="d-flex flex-column justify-content-center">
+      <h6 class="mb-1 font-weight-bold">
+        {{ class.name }}
+        <span class="text-muted font-weight-normal">(#{{ class.id }})</span>
+      </h6>
+      <span>{{ class.email }}</span>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,35 @@
+{
+    "name": "html_css_1pec_1",
+    "version": "1.0.0",
+    "description": "PEC_1 de la asignatura HTML y CSS 1. UOC.",
+    "main": "index.html",
+    "scripts": {
+        "parcel:dev": "parcel index.html",
+        "parcel:build": "parcel build index.html -d build --public-url ./",
+        "clean": "rimraf dist build .cache .cache-loader .parcel-cache",
+        "dev": "npm-run-all clean parcel:dev",
+        "build": "npm-run-all clean parcel:build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sam10F/HTML_CSS1PEC_1.git"
+    },
+    "author": "Samuel10F",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sam10F/HTML_CSS1PEC_1/issues"
+    },
+    "homepage": "https://github.com/Sam10F/HTML_CSS1PEC_1#readme",
+    "dependencies": {
+        "postcss-cli": "^8.2.0",
+        "postcss-custom-selectors": "^5.1.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.4",
+        "postcss-cli": "^8.2.0",
+        "postcss-custom-selectors": "^5.1.2",
+        "rimraf": "^2.7.1"
+    }
+}

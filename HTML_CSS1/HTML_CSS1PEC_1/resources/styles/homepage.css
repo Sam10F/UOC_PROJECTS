@@ -1,0 +1,254 @@
+/*WELCOME*/
+article#welcome {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/resources/images/Stephenking_house.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+article#welcome #main-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    position: fixed;
+    z-index: 0;
+}
+
+article#welcome #main-text p {
+    font-size: 21px;
+    background-color: #0006;
+}
+
+article#welcome #main-text h1 {
+    font-size: 72px;
+    background-color: #0006;
+}
+
+/*ULTIMOS LIBROS*/
+article#ultimos-libros {
+    background-color: var(--brown-background);
+}
+
+article#ultimos-libros #libros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 80px;
+}
+
+div.card-libro {
+    width: 100%;
+    height: 540px;
+    color: black;
+    background-color: white;
+}
+
+div.card-libro .img-container {
+    height: 55%;
+}
+
+div.card-libro .content-container {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+div.card-libro img {
+    /*object-fit: cover;*/
+    width: 100%;
+    height: 100%;
+}
+
+div.card-libro h3 {
+    padding-bottom: 10px;
+}
+
+div.card-libro a {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+article#ultimas-noticias > a,
+article#ultimos-libros > a {
+    display: block;
+    color: #0000ee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/*CIFRAS*/
+#cifras {
+    position: relative;
+    background-image: url("/resources/images/typewritter.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cifras .article-introduction h2::after {
+    background-color: white;
+}
+
+#cifras::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cifras-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 60px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+#cifras-container p:first-child {
+    font-size: 42px;
+    padding-bottom: 15px;
+}
+
+/*ULTIMAS NOTiCIAS*/
+article#ultimas-noticias {
+    background-color: var(--brown-background);
+}
+
+article#ultimas-noticias .noticia {
+    display: grid;
+    grid-template-columns: 35% 60% 45px;
+    height: 210px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+article#ultimas-noticias .imagen-container {
+    height: 210px;
+}
+
+article#ultimas-noticias .info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+}
+
+article#ultimas-noticias .imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article#ultimas-noticias h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+article#ultimas-noticias .info-container a {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+article#ultimas-noticias a img {
+    width: 100%;
+    padding: 0 7px;
+}
+
+@media (max-width: 1199px) {
+    /*CIFRAS*/
+    #cifras-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    /*ULTIMOS LIBROS*/
+    article#ultimos-libros #libros-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*WELCOME*/
+    article#welcome {
+        background-position-x: -260px;
+    }
+
+    /*ULTIMAS NOTICIAS*/
+    article#ultimas-noticias .noticia {
+        grid-template-columns: 35% 65%;
+        margin-bottom: 60px;
+    }
+
+    article#ultimas-noticias .info-container {
+        padding: 8px;
+    }
+
+    article#ultimas-noticias .social-link-container {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+    }
+
+    article#ultimas-noticias .social-link-container a {
+        height: 30px;
+        width: auto;
+    }
+
+    article#ultimas-noticias .social-link-container img {
+        height: 100%;
+        width: auto;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    /*WELCOME*/
+    article#welcome {
+        background-position-x: -510px;
+    }
+
+    /*ULTIMOS LIBROS*/
+    article#ultimos-libros #libros-container {
+        grid-template-columns: 1fr;
+    }
+
+    /*CIFRAS*/
+    #cifras-container {
+        grid-template-columns: 1fr;
+    }
+
+    /*ULTIMAS NOTICIAS*/
+    article#ultimas-noticias .noticia {
+        grid-template-columns: 35% 65%;
+        margin-bottom: 60px;
+    }
+
+    article#ultimas-noticias .info-container {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@custom-selector :--general-fixes p, h1, h2, h3, ul, a;
+
+:root {
+    --main-padding: 120px;
+    --brown-background: #a7a4a4;
+    --clear-background: #ece8e4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:--general-fixes {
+    margin: 0;
+    color: inherit;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    font-family: "Courier New", Courier, monospace;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: "Special Elite", cursive;
+}
+
+article {
+    padding: 50px var(--main-padding);
+    position: relative;
+    z-index: 1;
+}
+
+/*MENU PRINCIPAL*/
+header {
+    position: fixed;
+    top: 0;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: var(--main-padding);
+    color: white;
+    background-color: #0006;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+header > a {
+    margin-right: 40px;
+}
+
+header ul {
+    display: flex;
+    width: 17pc;
+    justify-content: space-between;
+}
+
+/*INTRODUCCION A SECCIONES*/
+.article-introduction {
+    text-align: center;
+    color: inherit;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.article-introduction h2 {
+    position: relative;
+    padding-bottom: 36px;
+}
+
+.article-introduction h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 36px;
+}
+
+/*FOOTER*/
+footer {
+    color: white;
+    height: 200px;
+    background-color: black;
+    padding: 32px var(--main-padding);
+    font-size: 18px;
+    position: relative;
+    z-index: 999;
+}
+
+footer > ul > li {
+    margin-right: 25px;
+}
+
+#footer-secciones {
+    display: flex;
+}
+
+#footer-secciones > li > p {
+    text-decoration: underline;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+#footer-secciones ul > li {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 1199px) {
+    :root {
+        --main-padding: 30px;
+    }
+}
+
+@media (max-width: 599px) {
+    /*HEADER*/
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header > a {
+        margin-right: 15px;
+    }
+
+    header ul {
+        width: 16pc;
+    }
+}
+
+@media (max-width: 399px) {
+    @media (max-width: 1199px) {
+        :root {
+            --main-padding: 10px;
+        }
+    }
+
+    /*HEADER*/
+    header ul {
+        width: 180px;
+    }
+}

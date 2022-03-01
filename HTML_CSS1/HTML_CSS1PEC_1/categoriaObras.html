@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_1PEC1</title>
+    <link rel="stylesheet" href="/resources/styles/main.css" />
+    <link rel="stylesheet" href="/resources/styles/categoriaObras.css" />
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" title="Link a la página de inicio">
+            <img src="/resources/images/sk-logo.png" alt="Logo con la cara de Stephen King" />
+        </a>
+        <ul>
+            <li>
+                <a class="active" href="#" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Sus Libros
+                </a>
+            </li>
+            <li>
+                <a href="categoriaNoticias.html" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Noticias
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <article id="filtrarObras">
+        <form>
+            <fieldset>
+                <legend>Encuentra el libro que buscas</legend>
+                <label for="formTitulo">
+                    Nombre
+                    <input id="formTitulo" type="text" placeholder="Cementerio de animales" />
+                </label>
+                <label for="formEditorial">
+                    Editorial
+                    <select id="formEditorial" type="text">
+                        <option value="">Cualquiera</option>
+                    </select>
+                </label>
+                <label for="formPrecio">
+                    Precio hasta
+                    <input id="formPrecio" type="number" placeholder="19" />
+                </label>
+            </fieldset>
+        </form>
+    </article>
+    <article id="obrasContainer"></article>
+
+    <footer>
+        <ul id="footer-secciones">
+            <li>
+                <p>Categorías</p>
+                <ul>
+                    <li>
+                        <a href="#" title="Link a la página de categoria sobre las obras de Stephen King">
+                            Sus obras
+                        </a>
+                    </li>
+                    <li>
+                        <a href="categoriaNoticias.html"
+                            title="Link a la página de categoria sobre las obras de Stephen King">
+                            Noticias
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Derechos de uso</p>
+                <ul>
+                    <li>
+                        <a href="https://icons8.com/icon/44624/stephen-king"
+                            title="Link a la página de categoria sobre las obras de Stephen King">
+                            icons8.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://icons8.com/icon/44624/stephen-king"
+                            title="Link a la página de categoria sobre las obras de Stephen King">
+                            Contenido en Wikipedia
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src="/resources/js/categoriaObras.js"></script>
+</body>
+
+</html>

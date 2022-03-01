@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_1PEC1</title>
+    <link rel="stylesheet" href="/resources/styles/main.css" />
+    <link rel="stylesheet" href="/resources/styles/categoriaObras.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="title">Stephen King</span>
+            <a href="/index.html" title="Link a la página de inicio">
+                <img src="/resources/images/SK_Logo.svg" alt="Logo con la cara de Stephen King" />
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a class="active" href="#" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Sus Libros
+                </a>
+            </li>
+            <li>
+                <a href="categoriaNoticias.html" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Noticias
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <div id="filtrarObras">
+        <form>
+            <fieldset>
+                <legend>Encuentra el libro que buscas</legend>
+                <label for="formTitulo">
+                    Nombre
+                    <input id="formTitulo" type="text" placeholder="Cementerio de animales" />
+                </label>
+                <label for="formEditorial">
+                    Editorial
+                    <select id="formEditorial" type="text">
+                        <option value="">Cualquiera</option>
+                    </select>
+                </label>
+                <label for="formPrecio">
+                    Precio hasta
+                    <input id="formPrecio" type="number" placeholder="19" />
+                </label>
+            </fieldset>
+        </form>
+    </div>
+    <div id="obrasContainer"></div>
+
+    <footer>
+        <span class="title">Stephen King</span>
+        <div class="clip-path-container">
+            <img src="/resources/images/sk1.png" srcset="/resources/images/sk1-small.png 599w" sizes="(max-width: 769px) 599px"
+                alt="Stephen King agradecido" />
+            <div id="tfc-bocadillo">
+                <img src="/resources/images/thanksForCommingWhite.png"
+                    srcset="/resources/images/thanksForCommingWhite-s.png 599w" sizes="(max-width: 769px) 599px" alt="Gracias por venir">
+            </div>
+        </div>
+    </footer>
+    <script src="/resources/js/categoriaObras.js"></script>
+</body>
+
+</html>

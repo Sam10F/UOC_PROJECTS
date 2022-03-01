@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/src/assets/styles/main.scss">
+
+  <script src="./assets/scripts/main.js"></script>
+
+
+  <title>Kings Of Stephen | Home Page</title>
+</head>
+
+<body>
+  <header>
+    <!-- /////////////// NAVIGATION //////////////////
+    Seccion dedicada al menú de navegación,
+    el cual irá siempre contenido en el header -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/rock.svg" alt="Logo of King of Stepehn" class="pr-2" width="35" height="35">
+          <h1>Kings Of Stephen</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainNavbar"
+          aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="MainNavbar">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./band-members.html">
+                Band Members
+                <i class="fas fa-users"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./biography.html">Biographyy<i class="fas fa-book-open"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hire-us.html">Hire us!<i class="fas fa-file-signature"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- /////////////// MAIN //////////////////
+    Seccion dedicada al Contenido principal de la página -->
+  <main class="px-0">
+    <div id="MainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active h-100" data-bs-interval="20000">
+          <ul class="grid-template-resume">
+            <!-- ROW 1 -->
+            <li class="grid-text bottom2top main-color">NEXT CONCERTS</li>
+            <li class="grid-container">
+              <ul class="list-of-items">
+                <li class="item">
+                  <img src="/src/assets/images/calendar.png" width="20" height="20">
+                  <span class="item-date">20/05/2021</span>
+                  <p class="item-main">León - Teatro principal</p>
+                </li>
+                <li class="item">
+                  <img src="/src/assets/images/calendar.png" width="20" height="20">
+                  <span class="item-date">12/07/2021</span>
+                  <p class="item-main">Madrid - Sala la Riviera</p>
+                </li>
+                <li class="item">
+                  <img src="/src/assets/images/calendar.png" width="20" height="20">
+                  <span class="item-date">11/08/2021</span>
+                  <p class="item-main">London - Royal Albert Hall</p>
+                </li>
+                <li class="item mb-0">
+                  <img src="/src/assets/images/calendar.png" width="20" height="20">
+                  <span class="item-date">20/05/2021</span>
+                  <p class="item-main">Athens - Concert stadium</p>
+                </li>
+              </ul>
+            </li>
+            <li></li>
+            <li></li>
+
+
+            <!-- ROW 2 -->
+            <li></li>
+            <li></li>
+            <li class="grid-container songs">
+              <ul class="list-of-items align-items-end">
+                <li class="item">
+                  <span class="item-main">The Shining</span>
+                  <img src="/src/assets/images/song.png" width="20" height="20">
+                </li>
+                <li class="item">
+                  <span class="item-main">The Dark Tower Series</span>
+                  <img src="/src/assets/images/song.png" width="20" height="20">
+                </li>
+                <li class="item">
+                  <span class="item-main">Misery</span>
+                  <img src="/src/assets/images/song.png" width="20" height="20">
+                </li>
+                <li class="item">
+                  <span class="item-main">‘Salem’s Lot</span>
+                  <img src="/src/assets/images/song.png" width="20" height="20">
+                </li>
+                <li class="item mb-0">
+                  <span class="item-main">11/22/63</span>
+                  <img src="/src/assets/images/song.png" width="20" height="20">
+                </li>
+              </ul>
+            </li>
+            <li class="grid-text top2bottom color-songs">LAST RELEASED SONGS</li>
+          </ul>
+          <img src="/src/assets/images/rock2.jpg" class="slider-img d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item h-100" data-bs-interval="20000">
+          <ul class="grid-template-tweets">
+            <!-- ROW 1 -->
+            <li class="tweet-container">
+              <div class="tweet" data-order="1">
+                <img class="tweet-icon" src="/src/assets/images/profile-user.svg" alt="Icon for user without image"
+                  width="72" height="72">
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="tweet-name">Samuel Diez</p>
+                  <p class="tweet-comment">Incredible, their concert is an unforgtable experience!!!</p>
+                </div>
+              </div>
+            </li>
+            <li class="tweet-container">
+              <div class="tweet" data-order="4">
+                <img class="tweet-icon" src="/src/assets/images/profile-user.svg" alt="Icon for user without image"
+                  width="72" height="72">
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="tweet-name">Sara Gomez</p>
+                  <p class="tweet-comment">A revolution, its the group of the moment</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- ROW 2 -->
+            <li class="tweet-container double-column">
+              <div class="tweet" data-order="5">
+                <img class="tweet-icon" src="/src/assets/images/profile-user.svg" alt="Icon for user without image"
+                  width="72" height="72">
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="tweet-name">Ana Cruz</p>
+                  <p class="tweet-comment">Definitely they became my favorite group</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- ROW 3 -->
+            <li class="tweet-container">
+              <div class="tweet" data-order="3">
+                <img class="tweet-icon" src="/src/assets/images/profile-user.svg" alt="Icon for user without image"
+                  width="72" height="72">
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="tweet-name">Juan López</p>
+                  <p class="tweet-comment">Every single song is amazing, it does not have any sense</p>
+                </div>
+              </div>
+            </li>
+            <li class="tweet-container">
+              <div class="tweet" data-order="2">
+                <img class="tweet-icon" src="/src/assets/images/profile-user.svg" alt="Icon for user without image"
+                  width="72" height="72">
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="tweet-name">Angela Vaquera</p>
+                  <p class="tweet-comment">Stop whatever you are doing and listen to them!!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <img src="/src/assets/images/rock3.jpg" class="slider-img d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#MainSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#MainSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- /////////////// FOOTER //////////////////
+    Seccion dedicada al footer y todo su contenido. -->
+  <footer id="footer">
+    <ul class="main-footer-content">
+      <li class="sitemap pb-0">
+        <a class="footer-branch mb-2" href="./index.html" title="Link to landing page">
+          <img src="./assets/images/rock.svg" alt="Logo of King of Stepehn" width="25" height="25">
+          Kings Of Stephen
+        </a>
+
+        <ul class="list-of-links">
+          <li>
+            <a class="link" href="./band-members.html" title="Link to Band members">
+              Band Members
+            </a>
+          </li>
+          <li>
+            <a class="link" href="./biography.html" title="Link to biography">
+              Biography
+            </a>
+          </li>
+          <li>
+            <a class="link" href="./hire-us.html" title="Link to Hire Us!">
+              Hire us!
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="band-members">
+        <h5>Band members</h5>
+        <ul class="list-of-members">
+          <li>
+            <a href="./band-members.html">
+              Jack Torrance
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Annie Wilkes
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Carrie White
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Jake Epping
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Louis Creed
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Cujo
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="contact-info">
+        <h5>Contact Info</h5>
+        <p><span>Address:</span> 47 W Broadway, Bangor, ME 04401</p>
+        <p>
+          <span>Email:</span>
+          <a href="mailto:kingsof@Stephen.com" title="Send us a personal mail">
+            kingsof@Stephen.com
+          </a>
+        </p>
+      </li>
+    </ul>
+
+    <hr>
+
+    <div class="license-info">
+      Branch icon made by <a href="https://www.flaticon.com/authors/wissawa-khamsriwath"
+        title="Wissawa Khamsriwath">Wissawa Khamsriwath</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
+  <script src="./assets/scripts/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <script src="/src/assets/scripts/main.js"></script>
+
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/src/assets/styles/main.scss">
+
+  <title>Kings Of Stephen | Home Page</title>
+</head>
+
+<body>
+  <!-- /////////////// NAVIGATION //////////////////
+    Seccion dedicada al menú de navegación,
+    el cual irá siempre contenido en el header -->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/src/index.html">
+          <img src="/src/assets/images/rock.svg" alt="Logo of King of Stepehn" class="pr-2" width="35" height="35">
+          <h1>Kings Of Stephen</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainNavbar"
+          aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="MainNavbar">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./band-members.html">Band Members<i
+                  class="fas fa-users"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./biography.html">Biography<i class="fas fa-book-open"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./hire-us.html">Hire us!<i
+                  class="fas fa-file-signature"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <form class="contact-form row" name="contact" method="POST" data-netlify="true">
+      <p class="form-title">Hire us!</h4>
+      <p class="form-subtitle">If you are interested for any reason, dont hesitate in contact us.</p>
+
+      <label for="InputName" class="form-label col-12 col-sm-6">
+        Your name:<i class="fas fa-signature"></i>
+        <input type="text" name="name" class="form-control" id="InputName" aria-describedby="nameHelp" required>
+        <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+      </label>
+
+      <label class="col-12 col-sm-6 mb-4">
+        <span>Interested in:<i class="far fa-lightbulb"></i></span>
+        <select class="form-select" name="type" aria-label="Select the reason to hire us">
+          <option value="private">Private concert</option>
+          <option value="pub">Pub concert</option>
+          <option value="Stadium">Stadium concert</option>
+        </select>
+      </label>
+
+      <label for="InputEmail" class="form-label col-12">
+        Email address:<i class="far fa-envelope"></i>
+        <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </label>
+
+      <label for="InputMessage" class="form-label col-12">
+        Message:<i class="far fa-comments"></i>
+        <textarea name="message" class="form-control" id="InputMessage" aria-describedby="messageHelp"></textarea>
+        <div id="messageHelp" class="form-text">Ask us whatever you want!.</div>
+      </label>
+
+      <button class="mx-auto mt-3 col-4 btn btn-dark" type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer id="footer">
+    <ul class="main-footer-content">
+      <li class="sitemap pb-0">
+        <a class="footer-branch mb-2" href="/src/index.html" title="Link to landing page">
+          <img src="/src/assets/images/rock.svg" alt="Logo of King of Stepehn" width="25" height="25">
+          Kings Of Stephen
+        </a>
+
+        <ul class="list-of-links">
+          <li>
+            <a class="link" href="./band-members.html" title="Link to Band members">
+              Band Members
+            </a>
+          </li>
+          <li>
+            <a class="link" href="./biography.html" title="Link to biography">
+              Biography
+            </a>
+          </li>
+          <li>
+            <a class="link" href="./hire-us.html" title="Link to Hire Us!">
+              Hire us!
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="band-members">
+        <h5>Band members</h5>
+        <ul class="list-of-members">
+          <li>
+            <a href="./band-members.html">
+              Jack Torrance
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Annie Wilkes
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Carrie White
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Jake Epping
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Louis Creed
+            </a>
+          </li>
+          <li>
+            <a href="./band-members.html">
+              Cujo
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="contact-info">
+        <h5>Contact Info</h5>
+        <p><span>Address:</span> 47 W Broadway, Bangor, ME 04401</p>
+        <p>
+          <span>Email:</span>
+          <a href="mailto:kingsof@Stephen.com" title="Send us a personal mail">
+            kingsof@Stephen.com
+          </a>
+        </p>
+      </li>
+    </ul>
+
+    <hr>
+
+    <div class="license-info">
+      Branch icon made by <a href="https://www.flaticon.com/authors/wissawa-khamsriwath"
+        title="Wissawa Khamsriwath">Wissawa Khamsriwath</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>

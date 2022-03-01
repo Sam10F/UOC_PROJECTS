@@ -1,0 +1,9 @@
+@custom-selector :--paragraph p;
+
+::placeholder {
+    color: red;
+}
+
+:--paragraph {
+    text-decoration: underline;
+}

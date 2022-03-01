@@ -1,0 +1,88 @@
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 101vw;
+  height: 100vh;
+  font-size: 4rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+
+.background-image-4 {
+  background-image: url("../images/rock4.jpg");
+}
+
+.background-image-5 {
+  background-image: url("../images/rock5.jpg");
+}
+
+.background-image-1 {
+  background-image: url("../images/rock1.jpg");
+}
+
+.band-name,
+.article-title {
+  text-align: center;
+}
+
+.info-container {
+  padding: 40px;
+  background-color: $post-color-dark;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+
+  @media (max-width: 800px) {
+    padding: 40px 15px;
+  }
+}
+
+.info-title {
+  text-decoration: underline;
+}
+
+.remarkable-info {
+  margin-bottom: 25px;
+  font-size: 2.4rem;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 1.8rem;
+  }
+}
+
+.info {
+  font-size: 1.4rem;
+
+  @media (max-width: 800px) {
+    font-size: 1.1rem;
+  }
+}
+
+.post-figure {
+  position: relative;
+  padding: 40px 15%;
+}
+
+.figure-image {
+  position: relative;
+  z-index: 1;
+}
+
+.post-figcaption {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+  font-size: 1.6rem;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 1.2rem;
+  }
+}

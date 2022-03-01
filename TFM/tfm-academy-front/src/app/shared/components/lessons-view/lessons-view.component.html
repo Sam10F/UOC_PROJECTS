@@ -1,0 +1,13 @@
+<div class="p-5 d-flex w-100 justify-content-center">
+  <div class="list w-25 border-right">
+    <h2 class="text-center mb-4 text-underline">Asignaturas</h2>
+    <app-assignature-list-item
+      [assignatureList]="assignaturesList"
+    ></app-assignature-list-item>
+  </div>
+  <article class="w-50 entity-detail text-center">
+    <app-assignature-detail
+      [refreshAssignatures]="getAllLessons"
+    ></app-assignature-detail>
+  </article>
+</div>

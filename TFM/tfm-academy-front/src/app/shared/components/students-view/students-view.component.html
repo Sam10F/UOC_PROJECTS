@@ -1,0 +1,9 @@
+<div class="p-5 d-flex w-100 justify-content-center">
+  <div class="list w-25 border-right">
+    <h2 class="text-center mb-4 text-underline">Estudiantes</h2>
+    <app-user-list-item [userList]="studentList"></app-user-list-item>
+  </div>
+  <article class="w-50 entity-detail text-center">
+    <app-student-detail [refreshStudents]="getAllStudents"></app-student-detail>
+  </article>
+</div>

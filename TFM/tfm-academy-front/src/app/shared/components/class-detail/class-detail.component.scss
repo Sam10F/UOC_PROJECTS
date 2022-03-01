@@ -1,0 +1,15 @@
+.lessons-list {
+  list-style: initial;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

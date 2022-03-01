@@ -1,0 +1,20 @@
+<form [formGroup]="textForm" id="SelectWordCnt">
+    <mat-form-field id="Title">
+        <mat-label>Exercise Title</mat-label>
+        <textarea matInput name="title" formControlName="title"></textarea>
+    </mat-form-field>
+
+    <mat-form-field id="Description">
+        <mat-label>Exercise Description</mat-label>
+        <textarea matInput name="description" formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field id="MainText">
+        <mat-label>Write your text</mat-label>
+        <textarea matInput name="content" formControlName="content"></textarea>
+    </mat-form-field>
+
+    <input type="hidden" name="type_id" formControlName="type_id" />
+</form>
+<button (click)="saveExercise(textForm.value)">Save</button>
+<app-select-word [previewObj]="textForm.value.content"></app-select-word>

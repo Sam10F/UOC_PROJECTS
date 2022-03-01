@@ -1,0 +1,30 @@
+<form [formGroup]="exerciseForm" id="TranslateWordCnt">
+    <mat-form-field id="Title">
+        <mat-label>Exercise Title</mat-label>
+        <textarea matInput name="title" formControlName="title"></textarea>
+    </mat-form-field>
+
+    <mat-form-field id="Description">
+        <mat-label>Exercise Description</mat-label>
+        <textarea matInput name="description" formControlName="description"></textarea>
+    </mat-form-field>
+
+    <ul>
+        <li formArrayName="content" *ngFor="let word of exerciseForm.get('content')['controls']; let i = index">
+            <mat-form-field [formGroupName]="i">
+                <input matInput name="word" formControlName="word">
+            </mat-form-field>
+            =
+            <mat-form-field [formGroupName]="i">
+                <input matInput name="translation" formControlName="translation">
+            </mat-form-field>
+        </li>
+        <li (click)="addTranslation('', '')">
+            Add translation
+        </li>
+    </ul>
+
+    <input type="hidden" name="type_id" formControlName="type_id" />
+</form>
+<button (click)="saveExercise(exerciseForm.value)">Save</button>
+<app-translate-word [previewExercise]="exerciseForm.controls.content.value" [previewMode]="true"></app-translate-word>

@@ -1,0 +1,46 @@
+/*
+* GENERAL FIXES
+*
+* Here i will write fixes for to tags
+* to avoid default styles to cause
+* conflicts with our style
+*
+*/
+
+body {
+  padding: 30px;
+  margin: 0; font-family: $font-family-sans-serif;
+  background-color: $bg-color;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navegation-height;
+  color: $text-color;
+  background-color: $cv-main-color;
+}
+
+li {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) { 
+
+  body {
+    padding: 15px;
+  }
+  
+}

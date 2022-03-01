@@ -1,0 +1,20 @@
+<div [innerHTML]="exercisePreview.text"></div>
+<ol class="p-0 mt-3" id="Options">
+  <li
+    class="mb-4 ml-2"
+    *ngFor="let options of exercisePreview.options; index as i"
+    (mouseover)="highlightSpace('group-' + (i + 1))"
+    (mouseleave)="disgraceSpace('group-' + (i + 1))"
+  >
+    <ul class="pl-2" id="OptionsGroup">
+      <li
+        *ngFor="let option of options"
+        (click)="selectOption('group-' + (i + 1), option)"
+      >
+        {{ option }}
+      </li>
+    </ul>
+  </li>
+</ol>
+<button (click)="checkExercise()">Check</button>
+<p>Final result: {{ finalResult }}</p>

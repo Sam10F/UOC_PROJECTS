@@ -1,0 +1,27 @@
+<div *ngIf="classDetail">
+  <div class="entity-header border-bottom border-4 ml-5 mr-5 pb-3">
+    <div class="circle">
+      <img
+        src="assets/icons/building.svg"
+        width="40"
+        height="40"
+        alt="Class icon"
+      />
+    </div>
+    <h4 class="mb-3">{{ classDetail.name }}</h4>
+    <button (click)="deleteClass()" mat-raised-button color="warn">
+      Eliminar
+    </button>
+  </div>
+  <div class="entity-body mt-3 d-flex flex-column align-items-center">
+    <span class="text-underline"><strong>Alumnos</strong></span>
+    <ul *ngIf="classDetail.students.length" class="lessons-list pl-4">
+      <li *ngFor="let student of classDetail.students">
+        {{ student.name }}
+      </li>
+    </ul>
+    <span *ngIf="!classDetail.students.length" class="text-muted">
+      Sin Alumnos
+    </span>
+  </div>
+</div>

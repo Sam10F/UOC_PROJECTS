@@ -1,0 +1,36 @@
+<div *ngIf="teacherDetail">
+  <div class="entity-header border-bottom border-4 ml-5 mr-5 pb-3">
+    <div class="circle">
+      <img
+        src="assets/icons/person-fill.svg"
+        width="40"
+        height="40"
+        alt="Class icon"
+      />
+    </div>
+    <h4>{{ teacherDetail.name }}</h4>
+    <p>{{ teacherDetail.email }}</p>
+    <button (click)="deleteTeacher()" mat-raised-button color="warn">
+      Eliminar
+    </button>
+  </div>
+  <div class="entity-body mt-3 d-flex flex-column align-items-center">
+    <ul class="w-50 text-left mb-4">
+      <li class="mb-2">
+        <span class="text-underline"><strong>Email:</strong></span>
+        {{ teacherDetail.email }}
+      </li>
+      <li>
+        <span class="text-underline"><strong>Asignaturas:</strong></span>
+        <ul *ngIf="teacherDetail.assignatures.length" class="lessons-list pl-4">
+          <li *ngFor="let assignature of teacherDetail.assignatures">
+            {{ assignature.name }}
+          </li>
+        </ul>
+        <span class="text-muted" *ngIf="!teacherDetail.assignatures.length">
+          Sin asignaturas
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

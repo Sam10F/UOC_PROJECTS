@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_1PEC3</title>
+    <link rel="stylesheet" href="/resources/styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="title">Stephen King</span>
+            <a href="/index.html" title="Link a la página de inicio">
+                <img src="/resources/images/SK_Logo.svg" alt="Logo con la cara de Stephen King" />
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="categoriaObras.html" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Sus Libros
+                </a>
+            </li>
+            <li>
+                <a class="active" href="#" title="Link a la página de categoria sobre las obras de Stephen King">
+                    Noticias
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div id="noticias-container">
+        <section class="article-introduction">
+            <h2>ÚLTIMAS NOTICIAS</h2>
+        </section>
+        <div id="noticias">
+            <a href="que-sera.html" id="primera-noticia" class="noticia">
+                <div class="img-container">
+                    <img src="/resources/images/noticia2.webp" srcset="/resources/images/noticia2.webp 1920w, 
+                                            /resources/images/noticia2-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                </div>
+                <div class="info-container">
+                    <h2>Stephen King habla sobre la nueva adaptación de IT.</h2>
+                    <p class="categoria">Opinión</p>
+                    <p class="fecha">Noviembre 05, 2020</p>
+                    <p class="resumen">Se estrena en cines la película basada en el libro más mítico del rey del terror.
+                    </p>
+                </div>
+            </a>
+
+            <a href="el-rey-del-horror.html" class="noticia">
+                <div class="img-container">
+                    <img src="/resources/images/noticia1.webp" srcset="/resources/images/noticia1.webp 1920w, 
+                                                /resources/images/noticia1-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                </div>
+                <div class="info-container">
+                    <h2>El rey del horror</h2>
+                    <p class="categoria">Opinión</p>
+                    <p class="fecha">Noviembre 01, 2020</p>
+                    <p class="resumen">El escritor Stephen King cumple 70 años en un momento en el que vuelve a estar de
+                        máxima
+                        actualidad.</p>
+                </div>
+            </a>
+
+            <a href="decenas-adaptaciones.html" class="noticia">
+                <div class="img-container">
+                    <img src="/resources/images/noticia3.webp" srcset="/resources/images/noticia3.webp 1920w, 
+                                            /resources/images/noticia3-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                </div>
+                <div class="info-container">
+                    <h2>Decenas de adaptaciones</h2>
+                    <p class="categoria">Peliculas</p>
+                    <p class="fecha">Octubre 25, 2020</p>
+                    <p class="resumen">El escritor estadounidense ofrece pinceladas de su vida...</p>
+                </div>
+            </a>
+
+            <a href="nos-visita.html" class="noticia">
+                <div class="img-container">
+                    <img src="/resources/images/noticia4.webp" srcset="/resources/images/noticia4.webp 1920w, 
+                                                /resources/images/noticia4-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                </div>
+                <div class="info-container">
+                    <h2>Stephen King nos visita de nuevo</h2>
+                    <p class="categoria">Peliculas</p>
+                    <p class="fecha">Octubre 05, 2020</p>
+                    <p class="resumen">‘El visitante’ sigue el concepto del autor: crímenes en un pueblo...</p>
+                </div>
+            </a>
+
+            <a href="el-viaje.html" class="noticia">
+                <div class="img-container">
+                    <img src="/resources/images/noticia5.webp" alt="Portada de la noticia" />
+                </div>
+                <div class="info-container">
+                    <h2>El viaje en el tiempo como truco cuántico</h2>
+                    <p class="categoria">Crítica</p>
+                    <p class="fecha">Septiembre 29, 2020</p>
+                    <p class="resumen">En una de sus novelas, Stephen King consideró los universos paralelos como un
+                        recurso...</p>
+                </div>
+            </a>
+        </div>
+        <div id="extra-info">
+            <div id="categorias">
+                <p>CATEGORIAS</p>
+                <p>Todas</p>
+                <p>Opinión</p>
+                <p>Crítica</p>
+                <p>Peliculas</p>
+            </div>
+            <div id="noticias-populares">
+                <p>Noticias Populares</p>
+                <a href="que-sera.html" class="noticia-popular">
+                    <img src="/resources/images/noticia1.webp" srcset="/resources/images/noticia1.webp 1920w, 
+                                                /resources/images/noticia1-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                    <p class="fecha">Noviembre 05, 2020</p>
+                    <p>Stephen King habla sobre la nueva adaptación de IT.</p>
+                </a>
+
+                <a href="nos-visita.html" class="noticia-popular">
+                    <img src="/resources/images/noticia4.webp" srcset="/resources/images/noticia4.webp 1920w, 
+                                                /resources/images/noticia4-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                    <p class="fecha">Octubre 05, 2020</p>
+                    <p>Stephen King nos visita de nuevo</p>
+                </a>
+
+                <a href="decenas-adaptaciones.html" class="noticia-popular">
+                    <img src="/resources/images/noticia3.webp" srcset="/resources/images/noticia3.webp 1920w, 
+                                            /resources/images/noticia3-s.webp 640w" sizes="(max-width: 980px) 640px"
+                        alt="Portada de la noticia" />
+                    <p class="fecha">Octubre 25, 2020</p>
+                    <p>Decenas de adaptaciones</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="title">Stephen King</span>
+        <div class="clip-path-container">
+            <img src="/resources/images/sk1.webp" srcset="/resources/images/sk1-small.webp 599w" sizes="(max-width: 769px) 599px"
+                alt="Stephen King agradecido" />
+            <div id="tfc-bocadillo">
+                <img src="/resources/images/thanksForCommingWhite.webp"
+                    srcset="/resources/images/thanksForCommingWhite-s.webp 599w" sizes="(max-width: 769px) 599px" alt="Gracias por venir">
+            </div>
+        </div>
+    </footer>
+    <script src="/resources/js/categoriaObras.js"></script>
+    <link rel="stylesheet" href="/resources/styles/categoriaNoticias.css" />
+    <link rel="stylesheet" href="/resources/styles/noticiasExtraInfo.css" />
+</body>
+</html>

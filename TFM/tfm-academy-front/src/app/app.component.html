@@ -1,0 +1,28 @@
+<header [ngClass]="getHeaderClass()" class="border-bottom">
+  <section
+    *ngIf="getHeaderClass() === 'Student'"
+    class="h-100 px-5 app-max-width"
+  >
+    <app-student-header></app-student-header>
+  </section>
+
+  <section
+    *ngIf="getHeaderClass() === 'Teacher'"
+    class="h-100 px-5 app-max-width"
+  >
+    <app-teacher-header></app-teacher-header>
+  </section>
+
+  <section
+    *ngIf="getHeaderClass() === 'SuperUser'"
+    class="h-100 px-5 app-max-width"
+  >
+    <app-superuser-header></app-superuser-header>
+  </section>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <span>TFM - Samuel Diez Fernández</span>
+</footer>
